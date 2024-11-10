@@ -1,0 +1,77 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+/* Seção Sobre Mim */
+.sobre-mim {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Seção Galeria */
+.galeria {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Estilo da Galeria de Imagens */
+.galeria ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.galeria li {
+    width: 30%;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Layout de duas colunas */
+.sobre-mim, .galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .sobre-mim, .galeria {
+        flex-direction: row;
+    }
+    .sobre-mim p {
+        flex: 1;
+    }
+    .galeria ul {
+        flex: 1;
+    }
+}
